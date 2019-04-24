@@ -1,0 +1,16 @@
+io\spring\guides\gs_producing_web_service\GetSrmOrgResponse$LIST.class
+io\spring\guides\gs_producing_web_service\ObjectFactory.class
+io\spring\guides\gs_producing_web_service\GetSrmOrgRequest$LIST$Header.class
+com\ws\Application.class
+io\spring\guides\gs_producing_web_service\GetSrmOrgRequest$LIST.class
+com\ws\repository\Country.class
+com\ws\repository\Currency.class
+io\spring\guides\gs_producing_web_service\GetSrmOrgRequest.class
+io\spring\guides\gs_producing_web_service\GetSrmOrgRequest$CommonHeader.class
+com\ws\repository\CountryRepository.class
+io\spring\guides\gs_producing_web_service\GetSrmOrgResponse$CommonHeader.class
+com\ws\serviceEnd\SrmEndpoint.class
+io\spring\guides\gs_producing_web_service\GetSrmOrgResponse$LIST$Header.class
+io\spring\guides\gs_producing_web_service\package-info.class
+io\spring\guides\gs_producing_web_service\GetSrmOrgResponse.class
+com\ws\config\WebServiceConfig.class
