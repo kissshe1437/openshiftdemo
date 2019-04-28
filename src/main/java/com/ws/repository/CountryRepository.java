@@ -3,6 +3,9 @@ package com.ws.repository;
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
+
+import io.spring.guides.gs_producing_web_service.Country;
+import io.spring.guides.gs_producing_web_service.Currency;
 import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
 

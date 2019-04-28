@@ -1,76 +1,36 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://spring.io/guides/gs-producing-web-service"
-           targetNamespace="http://spring.io/guides/gs-producing-web-service" elementFormDefault="qualified">          
-<xs:element name="getSrmOrgRequest">
-		<xs:complexType>
-		   <xs:sequence>
-				<xs:element name="commonHeader">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="BIZTRANSACTIONID" type="xs:string"/>
-							<xs:element name="COUNT" type="xs:string"/>
-							<xs:element name="CONSUMER" type="xs:string"/>
-							<xs:element name="SRVLEVEL" type="xs:string"/>
-							<xs:element name="ACCOUNT" type="xs:string"/>
-							<xs:element name="PASSWORD" type="xs:string"/>
-							<xs:element name="COMMENTS" type="xs:string"/>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
-				<xs:element name="LIST">
-					<xs:complexType>
-						<xs:sequence>	
-							<xs:element name="Header">
-								<xs:complexType>
-									<xs:sequence>						
-										<xs:element name="company_code" type="xs:string"/>
-										<xs:element name="vendor_class_code" type="xs:string"/>
-										<xs:element name="company_full_name" type="xs:string"/>
-										<xs:element name="business_unit_code" type="xs:string"/>
-										<xs:element name="tax_id_number" type="xs:string"/>
-                                        <xs:element name="bank_account_number" type="xs:string"/>											
-										<xs:element name="bank_branch_name" type="xs:string"/>	
-										<xs:element name="bank_address" type="xs:string"/>
-                                        <xs:element name="son_bank_name" type="xs:string"/>
-                                        <xs:element name="vendor_type" type="xs:string"/>																										
-									</xs:sequence>
-								</xs:complexType>							
-							</xs:element>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>				
-		   </xs:sequence>
-		</xs:complexType>
-	</xs:element>			
-	<xs:element name="getSrmOrgResponse">
-		<xs:complexType>
-		   <xs:sequence>
-				<xs:element name="commonHeader">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="BIZTRANSACTIONID" type="xs:string"/>
-							<xs:element name="RESULT" type="xs:string"/>
-							<xs:element name="SUCCESSCOUNT" type="xs:string"/>
-							<xs:element name="ERRORCODE" type="xs:string"/>
-							<xs:element name="ERRORINFO" type="xs:string"/>
-							<xs:element name="COMMENTS" type="xs:string"/>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
-				<xs:element name="LIST">
-					<xs:complexType>
-						<xs:sequence>	
-							<xs:element name="Header">
-								<xs:complexType>
-									<xs:sequence>						
-										<xs:element name="EX_CODE" type="xs:string"/>
-										<xs:element name="EX_MSG" type="xs:string"/>																
-									</xs:sequence>
-								</xs:complexType>							
-							</xs:element>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>		
-		   </xs:sequence>
-		</xs:complexType>
-	</xs:element>			
-  </xs:schema>
+           targetNamespace="http://spring.io/guides/gs-producing-web-service" elementFormDefault="qualified">
+
+    <xs:element name="getCountryRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getCountryResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="country" type="tns:country"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="country">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="population" type="xs:int"/>
+            <xs:element name="capital" type="xs:string"/>
+            <xs:element name="currency" type="tns:currency"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="currency">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="GBP"/>
+            <xs:enumeration value="EUR"/>
+            <xs:enumeration value="PLN"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

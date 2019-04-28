@@ -2,7 +2,7 @@
 // 此文件是由 JavaTM Architecture for XML Binding (JAXB) 引用实现 v2.2.7 生成的
 // 请访问 <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // 在重新编译源模式时, 对此文件的所有修改都将丢失。
-// 生成时间: 2018.12.26 时间 09:53:24 AM CST 
+// 生成时间: 2018.11.21 时间 04:27:40 PM CST 
 //
 
 
@@ -37,67 +37,27 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetSrmOrgRequest }
+     * Create an instance of {@link GetCountryRequest }
      * 
      */
-    public GetSrmOrgRequest createGetSrmOrgRequest() {
-        return new GetSrmOrgRequest();
+    public GetCountryRequest createGetCountryRequest() {
+        return new GetCountryRequest();
     }
 
     /**
-     * Create an instance of {@link GetSrmOrgResponse }
+     * Create an instance of {@link GetCountryResponse }
      * 
      */
-    public GetSrmOrgResponse createGetSrmOrgResponse() {
-        return new GetSrmOrgResponse();
+    public GetCountryResponse createGetCountryResponse() {
+        return new GetCountryResponse();
     }
 
     /**
-     * Create an instance of {@link GetSrmOrgResponse.LIST }
+     * Create an instance of {@link Country }
      * 
      */
-    public GetSrmOrgResponse.LIST createGetSrmOrgResponseLIST() {
-        return new GetSrmOrgResponse.LIST();
-    }
-
-    /**
-     * Create an instance of {@link GetSrmOrgRequest.LIST }
-     * 
-     */
-    public GetSrmOrgRequest.LIST createGetSrmOrgRequestLIST() {
-        return new GetSrmOrgRequest.LIST();
-    }
-
-    /**
-     * Create an instance of {@link GetSrmOrgRequest.CommonHeader }
-     * 
-     */
-    public GetSrmOrgRequest.CommonHeader createGetSrmOrgRequestCommonHeader() {
-        return new GetSrmOrgRequest.CommonHeader();
-    }
-
-    /**
-     * Create an instance of {@link GetSrmOrgResponse.CommonHeader }
-     * 
-     */
-    public GetSrmOrgResponse.CommonHeader createGetSrmOrgResponseCommonHeader() {
-        return new GetSrmOrgResponse.CommonHeader();
-    }
-
-    /**
-     * Create an instance of {@link GetSrmOrgResponse.LIST.Header }
-     * 
-     */
-    public GetSrmOrgResponse.LIST.Header createGetSrmOrgResponseLISTHeader() {
-        return new GetSrmOrgResponse.LIST.Header();
-    }
-
-    /**
-     * Create an instance of {@link GetSrmOrgRequest.LIST.Header }
-     * 
-     */
-    public GetSrmOrgRequest.LIST.Header createGetSrmOrgRequestLISTHeader() {
-        return new GetSrmOrgRequest.LIST.Header();
+    public Country createCountry() {
+        return new Country();
     }
 
 }
