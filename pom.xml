@@ -10,7 +10,7 @@
 <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>1.4.0.RELEASE</version>
+    <version>1.1.5.RELEASE</version>
 </parent>
 
 <dependencies>
@@ -33,7 +33,6 @@
     <!-- use UTF-8 for everything -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <start-class>hello.Application</start-class>
 </properties>
 
 <profiles>
