@@ -13,7 +13,7 @@ import org.springframework.xml.xsd.SimpleXsdSchema;
 import org.springframework.xml.xsd.XsdSchema;
 
 @EnableWs
-@Configuration
+@Configuration("webServiceConfig")
 public class WebServiceConfig extends WsConfigurerAdapter {
     @Bean
     public ServletRegistrationBean dispatcherServlet(ApplicationContext applicationContext) {
