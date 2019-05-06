@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Built-By: Bencai.You
+Start-Class: com.ws.Application
+Spring-Boot-Version: 1.1.5.RELEASE
+Created-By: Apache Maven 3.5.3
+Build-Jdk: 1.8.0_181
+Main-Class: org.springframework.boot.loader.JarLauncher
+
