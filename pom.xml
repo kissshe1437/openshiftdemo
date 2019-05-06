@@ -35,13 +35,6 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 </properties>
 
-<profiles>
-    <profile>
-        <!-- When built in OpenShift the 'openshift' profile will be used when invoking mvn. -->
-        <!-- Use this profile for any OpenShift specific customization your app will need. -->
-        <!-- By default that is to put the resulting archive into the 'deployments' folder. -->
-        <!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
-        <id>openshift</id>
         <build>
             <plugins>
                 <plugin>
@@ -51,11 +44,10 @@
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
                 </plugin>
-
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>jaxb2-maven-plugin</artifactId>
-                    <version>2.3.1</version>
+                    <version>1.6</version>
                     <executions>
                         <execution>
                             <id>xjc</id>
@@ -71,10 +63,6 @@
                     </configuration>
                 </plugin>
             </plugins>
-
         </build>
-    </profile>
-</profiles>
-
 
 </project>
